@@ -1,7 +1,7 @@
-pragma solidity ^0.4.21
+pragma solidity ^0.4.24
 
 // 컨트랙트 선언
-contract VM {
+contract KIPS_Sol {
 	address maker;
 	uint status;
 	
