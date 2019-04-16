@@ -10,4 +10,4 @@ dApp 을 이용한 취약점 분산관리 제안
 
 ### **??? : "You shouldn't have challenged the development of an Eth Contract, shinichi-kun!"**
 
-Solidity Lang is suck! 
+~~Solidity Lang is suck!~~ 
