@@ -50,15 +50,15 @@ contract VM {
 		if (status != 1)
 		{
 			maker = msg.sender; 
-			status = 1;
-			co_no =1;
-			pr_no =1;
-			vl_no =1;
+			status=1;
+			co_no=1;
+			pr_no=1;
+			vl_no=1;
 		}
 	}
 
 	// 제품 회사 등록
-	function register_vendor (string c_name, string c_details, string c_link) returns (uint co_id) 
+	function register_vendor(string c_name, string c_details, string c_link) returns (uint co_id) 
 	{ 
 		co_id = co_no++; 
 		Companys[co_id] = Company (co_id, c_name, c_details, c_link, msg.sender);
@@ -92,10 +92,10 @@ contract VM {
 	{
 		if(Companys[co_id].c_id == co_id)
 		{
-			a=Companys[co_id].c_id;
-			b=Companys[co_id].c_name;
-			c=Companys[co_id].c_details;
-			d=Companys[co_id].c_link;
+			a = Companys[co_id].c_id;
+			b = Companys[co_id].c_name;
+			c = Companys[co_id].c_details;
+			d = Companys[co_id].c_link;
 		}
 	}
 
