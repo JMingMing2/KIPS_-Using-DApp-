@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+ api:
+   container_name: api
+   image: api:latest
+   sysctls:
+     - net.core.somaxconn=4096
+   ports:
+     - '80:80'
+     - '443:443'
+   command: ./entrypoint.sh
+   deploy:
+     mode: replicated
+     replicas: 10
+   healthcheck:
+     test: ["CMD", "curl", "-f", "http://localhost"]
+     interval: 1m30s
+     timeout: 10s
+     retries: 3
+     start_period: 40s
+
